@@ -8,4 +8,4 @@ Step Functions have a ton of different use cases and help to visualize the workf
 
 ## **Solution Overview**
 
-![Solution Diargram](https://raw.ithubusercontent.com/hrmcardle0/step-functions-activity/main/diagram.png)
+![Solution Diagram](https://raw.githubusercontent.com/hrmcardle0/step-functions-activity/main/diagram.png)
