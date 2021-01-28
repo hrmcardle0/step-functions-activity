@@ -1,0 +1,28 @@
+{
+  "Comment": "State Machine that accepts an array as input and runs an activity on each element",
+  "StartAt": "Map",
+  "States": {
+    "Map": {
+      "Type": "Map",
+      "ItemsPath": "$.array",
+      "ResultPath": "$.array",
+      "MaxConcurrency": 2,
+      "Next": "Final State",
+      "Iterator": {
+        "StartAt": "Validate",
+        "States": {
+          "Validate": {
+            "Type": "Task",
+            "Resource": "arn:aws-us-gov:states:us-gov-west-1:836187276023:activity:StartScan",
+            "End": true
+          }
+        }
+      },
+      "ResultPath": "$.array"
+    },
+    "Final State": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}
