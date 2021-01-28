@@ -13,7 +13,7 @@
         "States": {
           "Validate": {
             "Type": "Task",
-            "Resource": "arn:aws-us-gov:states:us-gov-west-1:836187276023:activity:StartScan",
+            "Resource": "[Activity_ARN]",
             "End": true
           }
         }

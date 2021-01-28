@@ -9,3 +9,11 @@ Step Functions have a ton of different use cases and help to visualize the workf
 ## **Solution Overview**
 
 ![Solution Diagram](https://raw.githubusercontent.com/hrmcardle0/step-functions-activity/main/diagram.png)
+
+## **Deployment**
+
+Run Activity Deployment script and retreive the activity ARN, passing the following arguments: [activity name]
+
+Edit src/step-functions-definition.json file, replacing the filler Activity ARN with the recently created Activity ARN
+
+Run StateMachine Deployment script, passing the following arguments: [state machine name] [role-arn]
